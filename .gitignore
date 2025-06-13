@@ -1,0 +1,18 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/anaximenes/config/applicationhost.config
+/.vs/anaximenes/CopilotIndices/17.14.734.62261
+/.vs/anaximenes/CopilotIndices/17.14.734.62261/CodeChunks.db
+/.vs/anaximenes/CopilotIndices/17.14.734.62261/CodeChunks.db-shm
+/.vs/anaximenes/CopilotIndices/17.14.734.62261/CodeChunks.db-wal
+/.vs/anaximenes/CopilotIndices/17.14.734.62261/SemanticSymbols.db
+/.vs/anaximenes/CopilotIndices/17.14.734.62261/SemanticSymbols.db-shm
+/.vs/anaximenes/CopilotIndices/17.14.734.62261/SemanticSymbols.db-wal
+/.vs/anaximenes/FileContentIndex/91eb0c5f-6b59-4555-8a36-eb2425aa283a.vsidx
+/.vs/anaximenes/FileContentIndex/f3ae9aab-232a-4bc0-97bf-e9535e1147e0.vsidx
+/.vs/slnx.sqlite
+/.vs/anaximenes/FileContentIndex/8c119e1f-140b-43a8-ab16-5e3852778879.vsidx
+/.vs/anaximenes/FileContentIndex/9d8d3a9a-8f14-46ed-b1af-f7ac0d145574.vsidx
+*.vsidx
