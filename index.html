@@ -1,43 +1,237 @@
-document.addEventListener("DOMContentLoaded", function() {
+/* --- Global Styles & Fonts --- */
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.7;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 18px;
+}
 
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1a237e; /* Dark blue */
+    font-weight: 700;
+}
 
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
+a {
+    color: #c59d5f; /* Gold accent */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
-            if(targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
+a:hover {
+    color: #1a237e; /* Dark blue on hover */
+    text-decoration: underline;
+}
 
-    // Fade-in effect on scroll
-    const faders = document.querySelectorAll('.fade-in');
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
-    const appearOptions = {
-        threshold: 0.2, // El elemento se considera visible cuando el 20% está en pantalla
-        rootMargin: "0px 0px -50px 0px" // Activa la animación un poco antes de que llegue al borde
-    };
+section {
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-left: 5px solid #c59d5f;
+}
 
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-                return;
-            } else {
-                entry.target.classList.add('visible');
-                appearOnScroll.unobserve(entry.target); // Deja de observar el elemento una vez que es visible
-            }
-        });
-    }, appearOptions);
+.section-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
-    faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-    });
+/* --- Header & Hero Section --- */
+.hero {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1533130099464-1901859842a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
 
-});
+.hero-text h1 {
+    font-size: 4em;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+/* --- Navigation --- */
+nav {
+    background-color: #1a237e; /* Dark blue */
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c59d5f; /* Gold accent */
+    text-decoration: none;
+}
+
+/* --- Content Specific Styles --- */
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.quote {
+    border-left: 4px solid #1a237e;
+    padding-left: 20px;
+    margin: 30px 0;
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.quote p {
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 0;
+}
+
+.quote cite {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    color: #555;
+}
+
+ul {
+    list-style-type: '— '; /* Custom bullet */
+    padding-left: 25px;
+}
+
+/* --- Book Links Section --- */
+.book-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.book-card {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fdfdfd;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.book-card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.book-card h4 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #c59d5f;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #af894e;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+}
+
+/* --- JS Fade-in Animation --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+    .hero-text p {
+        font-size: 1em;
+    }
+    nav {
+        padding: 10px;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .section-img {
+        margin-top: 20px;
+        order: -1; /* Mueve la imagen arriba en móvil */
+    }
+    .book-links {
+        flex-direction: column;
+    }
+}
