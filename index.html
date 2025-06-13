@@ -1,237 +1,125 @@
-/* --- Global Styles & Fonts --- */
-body {
-    font-family: 'Lora', serif;
-    line-height: 1.7;
-    margin: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    font-size: 18px;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anaxímenes de Mileto: El Filósofo del Aire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    color: #1a237e; /* Dark blue */
-    font-weight: 700;
-}
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Anaxímenes de Mileto</h1>
+            <p>El Aliento del Cosmos</p>
+        </div>
+    </header>
 
-a {
-    color: #c59d5f; /* Gold accent */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+    <nav>
+        <a href="#vida">Vida y Contexto</a>
+        <a href="#pensamiento">Pensamiento</a>
+        <a href="#influencias">Influencias</a>
+        <a href="#obras">Obras</a>
+        <a href="#fuentes">Fuentes y Recursos</a>
+    </nav>
 
-a:hover {
-    color: #1a237e; /* Dark blue on hover */
-    text-decoration: underline;
-}
+    <main>
+        <section id="vida" class="fade-in">
+            <h2>Vida y Contexto Histórico</h2>
+            <div class="content-wrapper">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Miletus_Theater_2.JPG/1280px-Miletus_Theater_2.JPG" alt="Ruinas del teatro de Mileto" class="section-img">
+                <div>
+                    <p><strong>Anaxímenes de Mileto</strong> (en griego: Ἀναξιμένης ὁ Μιλήσιος) vivió aproximadamente entre el 585 a.C. y el 525 a.C. Fue el tercer y último miembro de la célebre <strong>Escuela de Mileto</strong>, junto a sus predecesores Tales y Anaximandro, de quien se dice que fue discípulo y compañero.</p>
+                    <p>Mileto, en la costa de Jonia (actual Turquía), era en ese momento una de las ciudades más prósperas y avanzadas del mundo griego. Su riqueza, proveniente del comercio marítimo, fomentó un ambiente de curiosidad intelectual y ocio que permitió el surgimiento de la filosofía. En este crisol cultural, los pensadores milesios fueron los primeros en intentar explicar el mundo a través de la razón (<em>logos</em>) en lugar de los mitos (<em>mythos</em>), buscando el principio fundamental o <em>arché</em> (ἀρχή) de todas las cosas.</p>
+                </div>
+            </div>
+        </section>
 
-main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
+        <section id="pensamiento" class="fade-in">
+            <h2>El Pensamiento de Anaxímenes</h2>
 
-section {
-    background-color: #ffffff;
-    margin-bottom: 40px;
-    padding: 30px 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    border-left: 5px solid #c59d5f;
-}
+            <h3>El Aire (ἀήρ) como <em>Arché</em></h3>
+            <p>A diferencia de Tales, que proponía el agua, y de Anaximandro, que postulaba lo indefinido (<em>ápeiron</em>), Anaxímenes identificó el <strong>aire (<em>aer</em>)</strong> como el principio originario de toda la realidad. Para él, el aire era la sustancia infinita, eterna y en perpetuo movimiento de la que todo surge y a la que todo regresa.</p>
+            <blockquote class="quote">
+                <p>“Así como nuestra alma, que es aire, nos mantiene unidos y nos gobierna, así también el aliento y el aire envuelven todo el cosmos.”</p>
+                <cite>— Atribuido a Anaxímenes por Aecio.</cite>
+            </blockquote>
 
-.section-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+            <h3>Rarefacción y Condensación: El Mecanismo del Cambio</h3>
+            <p>La genialidad de Anaxímenes radica en proponer un mecanismo físico claro para explicar cómo el aire se transforma en todas las demás cosas: la <strong>rarefacción</strong> y la <strong>condensación</strong>. Este fue un avance crucial sobre sus predecesores, ya que ofrecía una explicación causal y observable.</p>
+            <ul>
+                <li><strong>Rarefacción (menos denso):</strong> El aire, al enrarecerse, se calienta y se convierte en <strong>fuego</strong>.</li>
+                <li><strong>Condensación (más denso):</strong> El aire, al condensarse, se enfría y se transforma sucesivamente en <strong>viento</strong>, luego en <strong>nubes</strong>, <strong>agua</strong>, <strong>tierra</strong> y, finalmente, en <strong>piedras</strong>.</li>
+            </ul>
+            <blockquote class="quote">
+                <p>“Anaxímenes [...] dijo que el principio es el aire infinito, a partir del cual nacen las cosas que existen, las que han existido y las que existirán, y los dioses y las cosas divinas [...] La forma del aire es la siguiente: cuando es muy igual, es invisible a la vista, pero se hace visible por el frío y el calor y la humedad y el movimiento. [...] Condensado y enrarecido se manifiesta diferente: pues cuando se dilata hasta lo más sutil, se convierte en fuego [...]; en cambio, cuando se condensa, se convierte en vientos [...], si se condensa más, en nubes, y más aún, en agua; si la condensación aumenta, en tierra, y condensado al máximo, en piedras.”</p>
+                <cite>— Hipólito de Roma, Refutación de todas las herejías.</cite>
+            </blockquote>
 
-/* --- Header & Hero Section --- */
-.hero {
-    height: 60vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1533130099464-1901859842a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-}
+            <h3>Cosmología</h3>
+            <p>Anaxímenes imaginaba la Tierra como un disco plano, ancho y poco profundo, que "cabalga" sobre el aire, sostenida por la presión de este. Los cuerpos celestes, como el Sol y la Luna, también eran planos y estaban formados por fuego surgido de la exhalación húmeda de la Tierra. Creía que estos astros no pasaban por debajo de la Tierra, sino que giraban a su alrededor como un gorro de fieltro gira en la cabeza.</p>
+        </section>
 
-.hero-text h1 {
-    font-size: 4em;
-    margin: 0;
-    color: #fff;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-    font-weight: 700;
-}
+        <section id="influencias" class="fade-in">
+            <h2>Influencias Recibidas y Ejercidas</h2>
+            <div class="content-wrapper">
+                <div>
+                    <h3>Influencias Recibidas</h3>
+                    <ul>
+                        <li><strong>Tales de Mileto:</strong> Heredó la idea de buscar un único principio material (monismo) que explicara la naturaleza.</li>
+                        <li><strong>Anaximandro:</strong> Adoptó la noción de un <em>arché</em> infinito y eterno, pero lo concretó en una sustancia conocida (el aire) en lugar del abstracto <em>ápeiron</em>. También compartió la idea de un universo gobernado por leyes naturales.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Influencias Ejercidas</h3>
+                    <ul>
+                        <li><strong>Pitágoras y los Pitagóricos:</strong> Su idea de que las diferencias cualitativas (calor/frío, fuego/agua) se explican por diferencias cuantitativas (densidad) influyó en la visión matemática pitagórica del cosmos.</li>
+                        <li><strong>Heráclito:</strong> Pudo haber sido influenciado por la idea de un cosmos en constante transformación.</li>
+                        <li><strong>Diógenes de Apolonia:</strong> En el siglo V a.C., revivió y desarrolló la filosofía de Anaxímenes, identificando el aire con la inteligencia que gobierna el universo.</li>
+                        <li><strong>Atomistas (Leucipo y Demócrito):</strong> El mecanismo de condensación y rarefacción es un precursor directo de la idea atomista de que los cambios en el mundo se deben a la unión y separación de partículas en el vacío.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-.hero-text p {
-    font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    margin-top: 10px;
-    letter-spacing: 2px;
-}
+        <section id="obras" class="fade-in">
+            <h2>Principales Obras</h2>
+            <p>Se atribuye a Anaxímenes una única obra en prosa, escrita en un estilo jónico simple y sin adornos, titulada comúnmente <strong>"Sobre la Naturaleza" (<em>Περὶ φύσεως</em>)</strong>. Desafortunadamente, esta obra se ha perdido por completo y solo la conocemos a través de citas y resúmenes de autores posteriores (doxógrafos).</p>
+            <p>Dado que no sobreviven sus textos originales, no existen versiones en sitios de ebooks gratuitos. Sin embargo, sus fragmentos y testimonios están recopilados en volúmenes dedicados a los filósofos presocráticos.</p>
+            <div class="book-links">
+                <div class="book-card">
+                    <h4>Los filósofos presocráticos (Vol. I)</h4>
+                    <p>Una excelente compilación de los fragmentos y testimonios de los primeros filósofos, incluyendo a Anaxímenes. La edición de Gredos es la referencia académica en español.</p>
+                    <a href="https://www.amazon.es/fil%C3%B3sofos-presocr%C3%A1ticos-Biblioteca-Cl%C3%A1sica-Gredos/dp/8424916573/" target="_blank" class="btn">Ver en Amazon.es</a>
+                </div>
+                <div class="book-card">
+                    <h4>Fragmentos Presocráticos (De Tales a Demócrito)</h4>
+                    <p>Otra opción muy recomendada que reúne los textos supervivientes de la filosofía presocrática, permitiendo un estudio directo de sus ideas a través de las fuentes antiguas.</p>
+                    <a href="https://www.amazon.es/Fragmentos-presocr%C3%A1ticos-Tales-Dem%C3%B3crito-Ensayos/dp/842067576X/" target="_blank" class="btn">Ver en Amazon.es</a>
+                </div>
+            </div>
+        </section>
 
-/* --- Navigation --- */
-nav {
-    background-color: #1a237e; /* Dark blue */
-    padding: 15px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
+        <section id="fuentes" class="fade-in">
+            <h2>Fuentes y Recursos Externos</h2>
+            <p>Para profundizar en la vida y el pensamiento de Anaxímenes de Mileto, aquí tienes una selección de enlaces a enciclopedias, artículos y repositorios académicos.</p>
+            <ul>
+                <li><a href="https://es.wikipedia.org/wiki/Anax%C3%ADmenes" target="_blank">Anaxímenes en Wikipedia</a> - Un buen punto de partida con información general.</li>
+                <li><a href="https://plato.stanford.edu/entries/presocratic-philosophy/" target="_blank">Presocratic Philosophy en Stanford Encyclopedia of Philosophy</a> - (En inglés) Un análisis académico y profundo del contexto y las ideas de los presocráticos, incluido Anaxímenes.</li>
+                <li><a href="https://iep.utm.edu/anaximen/" target="_blank">Anaximenes en Internet Encyclopedia of Philosophy</a> - (En inglés) Otro recurso académico de alta calidad, muy detallado.</li>
+                <li><a href="https://www.academia.edu/search?q=anaximenes%20de%20mileto" target="_blank">Artículos sobre Anaxímenes en Academia.edu</a> - Búsqueda de trabajos y ensayos de investigadores sobre el filósofo.</li>
+                <li><a href="https://archive.org/details/earlygreekphilos00burnuoft" target="_blank">Early Greek Philosophy por John Burnet en Archive.org</a> - (En inglés) Un texto clásico sobre la filosofía griega temprana donde se analiza a Anaxímenes.</li>
+            </ul>
+        </section>
+    </main>
 
-nav a {
-    color: #fff;
-    margin: 0 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1.1em;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+    <footer>
+        <p>© 2023 - Página de ejemplo creada con HTML, CSS y JS.</p>
+    </footer>
 
-nav a:hover {
-    color: #c59d5f; /* Gold accent */
-    text-decoration: none;
-}
-
-/* --- Content Specific Styles --- */
-.content-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: center;
-}
-
-.quote {
-    border-left: 4px solid #1a237e;
-    padding-left: 20px;
-    margin: 30px 0;
-    background-color: #f4f4f9;
-    padding: 20px;
-    border-radius: 0 8px 8px 0;
-}
-
-.quote p {
-    font-size: 1.2em;
-    font-style: italic;
-    margin: 0;
-}
-
-.quote cite {
-    display: block;
-    text-align: right;
-    margin-top: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9em;
-    color: #555;
-}
-
-ul {
-    list-style-type: '— '; /* Custom bullet */
-    padding-left: 25px;
-}
-
-/* --- Book Links Section --- */
-.book-links {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.book-card {
-    flex: 1;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    background-color: #fdfdfd;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.book-card:hover {
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    transform: translateY(-5px);
-}
-
-.book-card h4 {
-    margin-top: 0;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #c59d5f;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #af894e;
-    color: #fff;
-    text-decoration: none;
-}
-
-/* --- Footer --- */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #ccc;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9em;
-}
-
-/* --- JS Fade-in Animation --- */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-/* --- Responsive Design --- */
-@media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 2.5em;
-    }
-    .hero-text p {
-        font-size: 1em;
-    }
-    nav {
-        padding: 10px;
-    }
-    nav a {
-        display: block;
-        margin: 5px 0;
-    }
-    .content-wrapper {
-        grid-template-columns: 1fr;
-    }
-    .section-img {
-        margin-top: 20px;
-        order: -1; /* Mueve la imagen arriba en móvil */
-    }
-    .book-links {
-        flex-direction: column;
-    }
-}
+    <script src="script.js"></script>
+</body>
+</html>
